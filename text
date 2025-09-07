@@ -1,0 +1,39 @@
+.clock {
+  background-color: #37353e;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 3rem; /* بدل ما تخليها صغيرة */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding-top: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: medium;
+}
+
+.sec {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    color: #67c090;
+  }
+  50% {
+    transform: scale(1.2);
+    color: #a3e4c4;
+  }
+  100% {
+    transform: scale(1);
+    color: #67c090;
+  }
+}
